@@ -1,0 +1,19 @@
+{
+  "name": "zero-trust-web-archiver",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A zero-trust web snapshot archiver for GitHub Actions",
+  "engines": {
+    "node": ">=20 <21"
+  },
+  "scripts": {
+    "test": "node tests/security.test.mjs && node tests/sanitize.test.mjs",
+    "start": "node scripts/archive.mjs"
+  },
+  "dependencies": {
+    "cheerio": "1.0.0",
+    "ipaddr.js": "2.2.0",
+    "playwright": "1.52.0"
+  }
+}
